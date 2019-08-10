@@ -85,7 +85,7 @@ console.log(sortedList);
 // The accounting team needs all the years from every car on the lot. Create a new array from the dealer data containing only the car years and log the result in the console.
 let carYears = [];
 for (let i=0;i<inventory.length;i++){
-    carYears[i]=inventory[i]['car_year'];
+    carYears.push(inventory[i].car_year);
 }
 console.log(carYears);
 
@@ -102,7 +102,12 @@ console.log(oldCars.length);
 // ==== Challenge 6 ====
 // A buyer is interested in seeing only BMW and Audi cars within the inventory.  Return an array that only contains BMW and Audi cars.  Once you have populated the BMWAndAudi array, use JSON.stringify() to show the results of the array in the console.
 let BMWAndAudi = [];
-console.log();
+for (let i=0;i<inventory.length;i++){
+    if(inventory[i].car_make=="BMW" || inventory[i].car_make=="Audi"){
+        BMWAndAudi.push(inventory[i]);
+    }
+}
+console.log(JSON.stringify(BMWAndAudi));
 
 
 

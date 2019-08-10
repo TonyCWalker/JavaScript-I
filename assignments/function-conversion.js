@@ -13,23 +13,23 @@ myFunction();
 // let anotherFunction = function (param) {
 //   return param;
 // };
-let anotherFunction = (param) => param;
+let anotherFunction = (param) =>  console.log(param);
 
-console.log(anotherFunction("Example"));
+anotherFunction("Example");
 
 // let add = function (param1, param2) {
 //   return param1 + param2;
 // };
-let add = (param1, param2) => param1 + param2;
+let add = (param1, param2) => console.log(param1 + param2);
 
-console.log(add(1, 2));
+add(1, 2);
 
 // let subtract = function (param1, param2) {
 //   return param1 - param2;
 // };
-let subtract = (param1, param2) => param1 - param2;
+let subtract = (param1, param2) => console.log(param1 - param2);
 
-console.log(subtract(1, 2));
+subtract(1, 2);
 
 
 // Stretch
